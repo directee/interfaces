@@ -1,0 +1,27 @@
+{
+    "name": "directee/interfaces",
+    "type": "library",
+    "version": "0.0.0",
+    "description": "Directee Interfaces",
+    "config": {
+        "platform": {
+            "php": "7.4"
+        },
+        "sort-packages": true
+    },
+
+    "autoload": {
+        "psr-4": {
+            "DirecteeInterface\\": "src/"
+        }
+    },
+
+    "minimum-stability": "stable",
+
+   "require": {
+        "psr/container": "^2.0",
+        "psr/event-dispatcher": "^1.0",
+        "psr/http-client": "^1.0",
+        "psr/log": "*"
+    }
+}

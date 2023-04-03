@@ -1,2 +1,1 @@
-# interfaces
-Directee Interfaces
+# Directee Interfaces
