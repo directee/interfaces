@@ -2,6 +2,8 @@
 
 namespace DirecteeInterface;
 
+use Psr\Log\LoggerInterface;
+
 /**
  * Directee Application Core
  *
@@ -12,6 +14,8 @@ interface Core
 {
     function httpFactory(): HttpFactory;
     function createHttpRouter(): HttpRouter;
+
+    function logger(): LoggerInterface;
 
     function dataRepository(): DataRepository;
     function schemaRepository(): DataRepository;
