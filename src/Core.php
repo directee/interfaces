@@ -1,6 +1,6 @@
 <?php
 
-namespace DirecteeInterface;
+namespace Directee\Interface;
 
 use Psr\Log\LoggerInterface;
 
@@ -21,4 +21,5 @@ interface Core
     function schemaRepository(): DataRepository;
 
     function basePath(): string;
+    function authInfo(): Auth\AuthInfo;
 }

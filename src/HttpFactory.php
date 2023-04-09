@@ -1,6 +1,6 @@
 <?php
 
-namespace DirecteeInterface;
+namespace Directee\Interface;
 
 use Psr\Http\Message\RequestFactoryInterface;
 use Psr\Http\Message\ResponseFactoryInterface;

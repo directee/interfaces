@@ -1,6 +1,6 @@
 <?php
 
-namespace DirecteeInterface;
+namespace Directee\Interface;
 
 interface HttpRouter
 {
