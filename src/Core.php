@@ -1,6 +1,6 @@
 <?php
 
-namespace Directee\Interface;
+namespace Directee\Interfaces;
 
 use Psr\Log\LoggerInterface;
 

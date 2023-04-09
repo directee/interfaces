@@ -1,6 +1,6 @@
 <?php
 
-namespace Directee\Interface\Auth;
+namespace Directee\Interfaces\Auth;
 
 final class AuthInfo
 {
