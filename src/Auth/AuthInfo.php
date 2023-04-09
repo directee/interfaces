@@ -4,7 +4,7 @@ namespace Directee\Interface\Auth;
 
 final class AuthInfo
 {
-    public bool $authOk;
-    public string $userId;
-    public string $userName;
+    public bool $authOk            = false;
+    public string $userId          = '';
+    public string $userName        = '';
 }
