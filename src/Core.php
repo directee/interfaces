@@ -12,13 +12,13 @@ use Psr\Log\LoggerInterface;
  */
 interface Core
 {
-    function httpFactory(): HttpFactory;
-    function createHttpRouter(): HttpRouter;
+    function httpFactory(): Http\HttpFactory;
+    function createHttpRouter(): Http\HttpRouter;
 
     function logger(): LoggerInterface;
 
-    function dataRepository(): DataRepository;
-    function schemaRepository(): DataRepository;
+    function dataRepository(): Data\DataRepository;
+    function schemaRepository(): Data\DataRepository;
 
     function basePath(): string;
     function authInfo(): Auth\AuthInfo;

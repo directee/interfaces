@@ -4,7 +4,7 @@ namespace Directee\Interfaces;
 
 interface Extension
 {
-    function register(Core $core): void;
+    function register(Core $core, ExtensionContext $context): void;
 
-    function httpRouter(): httpRouter;
+    function httpRouter(): Http\httpRouter;
 }

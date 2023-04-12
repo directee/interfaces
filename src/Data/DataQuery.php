@@ -1,6 +1,6 @@
 <?php
 
-namespace Directee\Interfaces;
+namespace Directee\Interfaces\Data;
 
 interface DataQuery
 {
