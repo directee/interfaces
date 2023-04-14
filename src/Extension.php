@@ -2,9 +2,9 @@
 
 namespace Directee\Interfaces;
 
-interface Extension
-{
-    function register(Core $core, ExtensionContext $context): void;
+use Psr\Container\ContainerInterface;
 
-    function httpRouter(): Http\httpRouter;
+interface Extension extends ContainerInterface
+{
+    function connect(Core $core, ExtensionContext $context): void;
 }

@@ -13,7 +13,6 @@ use Psr\Log\LoggerInterface;
 interface Core
 {
     function httpFactory(): Http\HttpFactory;
-    function createHttpRouter(): Http\HttpRouter;
 
     function logger(): LoggerInterface;
 
