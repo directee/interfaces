@@ -9,7 +9,9 @@ final class ExtensionManifest
     private string $name;
     private string $description;
     private HttpRouter $apiRouter;
-    private array $services;
+    private array $listeners = [];
+    private array $handlers = [];
+    private array $services = [];
 
     public function __construct()
     {
@@ -59,6 +61,28 @@ final class ExtensionManifest
     public function setApiBasePath(string $basePath): self
     {
         $this->apiRouter->setBasePath($basePath);
+        return $this;
+    }
+
+    public function listeners(): array
+    {
+        return $this->listeners;
+    }
+
+    public function addEventListener(string $event, string $listener): self
+    {
+        $this->listeners[] = [$event, $listener];
+        return $this;
+    }
+
+    public function handlers(): array
+    {
+        return $this->handlers;
+    }
+
+    public function addCommandHandler(string $command, string $handler): self
+    {
+        $this->handlers[$command] = $handler;
         return $this;
     }
 
