@@ -1,20 +1,11 @@
 <?php
+declare(strict_types=1);
 
 namespace Directee\Interfaces\Command;
 
-use Directee\Interfaces\Pass\Command;
-
-final class NullCommand implements Command
+final readonly class NullCommand
 {
-    private string $name;
-
-    public function __construct(string $name = '')
-    {
-        $this->name = $name;
-    }
-
-    public function name(): string
-    {
-        return $this->name;
-    }
+    public function __construct(
+        public string $name = '',
+    ) { }
 }

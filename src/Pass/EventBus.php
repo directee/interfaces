@@ -11,5 +11,5 @@ interface EventBus extends EventDispatcherInterface
     public const PRIORITY_LOW = -100;
 
     public function subscribeTo(string $event, string $listener, int $priority = self::PRIORITY_NORMAL): void;
-    public function dispatch(Event $event): Event;
+    public function dispatch(object $event);
 }

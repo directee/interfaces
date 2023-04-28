@@ -2,19 +2,9 @@
 
 namespace Directee\Interfaces\Event;
 
-use Directee\Interfaces\Pass\Event;
-
-final class NullEvent implements Event
+final readonly class NullEvent
 {
-    private string $name;
-
-    public function __construct(string $name = '')
-    {
-        $this->name = $name;
-    }
-
-    public function name(): string
-    {
-        return $this->name;
-    }
+    public function __construct(
+        public string $name = '',
+    ) { }
 }
