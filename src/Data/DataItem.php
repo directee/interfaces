@@ -4,9 +4,8 @@ namespace Directee\Interfaces\Data;
 
 interface DataItem
 {
-    public function resource(): string;
+    public function type(): string;
 
-    public function keyName(): string;
     public function hasId(): bool;
     public function getId();
     public function setId($id);

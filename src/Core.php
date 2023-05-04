@@ -19,7 +19,7 @@ interface Core
     function logger(): LoggerInterface;
 
     function dataRepository(): Data\DataRepository;
-    function schemaRepository(): Data\DataRepository;
+    function metaRepository(): Data\MetaRepository;
 
     function httpFactory(): Http\HttpFactory;
     function basePath(): string;
