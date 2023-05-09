@@ -14,6 +14,5 @@ interface DataItem
     public function setAttribute(string $name, $value): void;
     public function attributes(): array;
 
-    public function asArray(): array;
     public function fromArray(array $data): void;
 }

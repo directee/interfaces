@@ -4,7 +4,7 @@ namespace Directee\Interfaces\Data;
 
 interface DataRepository
 {
-    public function createItem(string $type): DataItem;
+    public function createItem(string $type, array $initialData = []): DataItem;
     public function createQuery(): DataQuery;
 
     public function find(string $type, string $id): DataItem;
