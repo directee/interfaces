@@ -14,4 +14,6 @@ interface DataRepository
 
     public function save(DataItem $item): void;
     public function delete(DataItem $item): void;
+
+    public function informationSchema(): DataRepository;
 }
