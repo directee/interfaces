@@ -2,8 +2,6 @@
 
 namespace Directee\Interfaces;
 
-use Directee\Interfaces\Pass\CommandBus;
-use Directee\Interfaces\Pass\EventBus;
 use Psr\Log\LoggerInterface;
 
 /**
@@ -14,8 +12,8 @@ use Psr\Log\LoggerInterface;
  */
 interface Core
 {
-    function commandBus(): CommandBus;
-    function eventBus(): EventBus;
+    function commandBus(): Pass\CommandBus;
+    function eventBus(): Pass\EventBus;
     function logger(): LoggerInterface;
 
     function dataRepository(): Data\DataRepository;
