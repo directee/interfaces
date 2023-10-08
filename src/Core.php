@@ -7,7 +7,7 @@ use Psr\Log\LoggerInterface;
 /**
  * Directee Application Core
  *
- * Common services for extensions
+ * Core services for extensions
  *
  */
 interface Core
@@ -16,9 +16,9 @@ interface Core
     function eventBus(): Pass\EventBus;
     function logger(): LoggerInterface;
 
-    function dataRepository(): Data\DataRepository;
+    // function dataRepository(): Data\DataRepository;
 
     function httpFactory(): Http\HttpFactory;
-    function basePath(): string;
-    function authInfo(): Auth\AuthInfo;
+    // function basePath(): string;
+    // function authInfo(): Auth\AuthInfo;
 }
