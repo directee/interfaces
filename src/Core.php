@@ -16,7 +16,7 @@ interface Core
     function eventBus(): Pass\EventBus;
     function logger(): LoggerInterface;
 
-    // function dataRepository(): Data\DataRepository;
+    function dataRepository(): Data\Repository;
 
     function httpFactory(): Http\HttpFactory;
     // function basePath(): string;
