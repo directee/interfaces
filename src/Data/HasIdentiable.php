@@ -26,9 +26,4 @@ trait HasIdentiable
     {
         return (bool) $this->id;
     }
-
-    public function setId($id): void
-    {
-        $this->id = $id;
-    }
 }
