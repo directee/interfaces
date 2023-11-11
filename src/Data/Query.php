@@ -9,4 +9,6 @@ interface Query
     public function sort(string $field, bool $descending = false): self;
     public function offset(int $value): self;
     public function limit(int $value = 20): self;
+
+    public static function expr(): FilterExpressionBuilder;
 }
