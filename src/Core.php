@@ -19,6 +19,8 @@ interface Core
     function dataRepository(): Data\Repository;
 
     function httpFactory(): Http\HttpFactory;
+
+    function applicationRoot(): string;
     // function basePath(): string;
     // function authInfo(): Auth\AuthInfo;
 }
